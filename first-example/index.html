@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+  </head>
+  <body>
+    <br />
+    <h2>Basic example of TensorFlow.JS</h2>
+    <h4>The basic model try to resolve the problem:</h4>
+    <pre>y = 2x - 1</pre>
+    <hr/>
+    <br />
+    <div id="training">Training the model with 250 epochs...</div>
+    <br />
+    <label for="value-to-test">Your test:</label> <input disabled id="value-to-test" placeholder="20" size=10 />
+    <p> The expected result: <strong id="expected">...</strong></p>
+    <p> The prediction: <strong id="prediction">...</strong></p>
+    <br />
+    <hr/>
+    <br />
+    <h4>If you want, you can change epochs:</h4>
+    <hr/>
+    <label for="new-epochs">New epochs:</label> <input disabled id="new-epochs" placeholder="250" size=10 />
+
+
+    <script src="./index.js"> </script>
+  </body>
+</html>

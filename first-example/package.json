@@ -1,0 +1,18 @@
+{
+  "name": "first-example",
+  "version": "1.0.0",
+  "description": "The most basic tensorflowJS example based on the getting-started of Tensorflowjs examples",
+  "main": "index.js",
+  "author": "Ángel Luis Quesada Nieto",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "dependencies": { },
+  "scripts": {
+    "watch": "npm run build && node_modules/http-server/bin/http-server dist -p 1234 ",
+    "build": "mkdir -p dist/ && cp index.html dist/ && cp index.js dist/"
+  },
+  "devDependencies": {
+  }
+}
