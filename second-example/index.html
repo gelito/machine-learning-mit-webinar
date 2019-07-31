@@ -1,0 +1,41 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <br />
+    <h2>Second example using TensorFlow.JS and a pre-trained Mobilenet model from Keras</h2>
+    <hr/>
+    <br />
+    <h4 id="preparing">Preparing the three models...</h4>
+    <br />
+    <label for="file">Upload an image:</label> <br />
+    <input disabled type="file" id="file" name="file"  />
+    <hr/>
+    <img id="img" src="./assets/blank.png" width=224 height=224 />
+    <hr/>
+    <div id="modelFromLayers"></div>
+    <div id="modelFromMobilenetv1"></div>
+    <div id="modelFromMobilenetv2"></div>
+
+
+    <br />
+    <br />
+    <hr />
+    <h3>Notes</h3>
+    <p>This demo uses these pretrained models from Keras:</p>
+    <ul>
+      <li>JSON model of the version 1. alpha 0.25 - <a target="_blank" href="https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json">you can see here</a></li>
+      <li>Packetized mobilenet version 1. alpha 1  - <a target="_blank" href="https://tfhub.dev/google/imagenet/mobilenet_v1_100_224/classification/1">you can see here</a></li>
+      <li>Packetized mobilenet version 2. alpha 1  - <a target="_blank" href="https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/classification/2">you can see here</a></li>
+    </ul>
+
+    <p>
+      It is not trained to recognize human faces. For best performance, upload images of objects
+      like piano, coffee mugs, bottles, etc. You can see all the objects types it has been trained to recognize in <a href="./imagenet_classes.js" target="_blank">imagenet_classes.js</a>.
+    </p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
